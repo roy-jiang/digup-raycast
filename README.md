@@ -3,6 +3,8 @@
 Search the files on your Mac by what's in them, from Raycast. Describe what you're looking for and get the picture,
 the PDF page, the moment in a recording or a video, or the code that matches.
 
+![Searching "a zebra" finds a video at 0:06, the moment the zebra shows up, and offers to open it there](media/moment.png)
+
 This extension is a front end for [DigUp](https://github.com/ARahim3/DigUp), a free and open-source Mac app that
 indexes your folders with Google DeepMind's EmbeddingGemma 2, entirely on your Mac. DigUp builds and keeps the
 index; this extension searches it.
@@ -44,6 +46,11 @@ Exact words count too: invoice numbers, error codes and names are matched as wri
 matches; when you pause, matches by meaning replace them.
 
 Pick a file type from the dropdown to narrow the search. The Code item is there when code search is on in DigUp.
+
+| | |
+|---|---|
+| ![A lease found by "the clause about pets in the lease", with the page that matched](media/page.png) | ![A function found by "code: retry a failed call with backoff", shown as code, opening in the editor](media/code.png) |
+| ![A photo and a video moment found by "a red parrot"](media/photo.png) | |
 
 | Action | What it does |
 |---|---|

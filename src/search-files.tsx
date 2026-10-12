@@ -250,6 +250,10 @@ function Search(props: {
       filtering={false}
       isLoading={state.loading}
       isShowingDetail={hits.length > 0}
+      // The selection follows the best match. Raycast keeps it on a row that is still there, so a row picked from
+      // the word matches stayed selected when the matches by meaning arrived, even as a weaker match far down the
+      // list, and Return opened that. The id changes only when the best match does, so arrowing around is left alone.
+      selectedItemId={hits.length > 0 ? idOf(hits[0]) : undefined}
       onSelectionChange={setSelectedId}
       searchText={typed}
       onSearchTextChange={setTyped}
